@@ -1,41 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animationen</title>
-    <meta name="lang" content="de" />
     <style>
-        .box {
-            animation: scale-up-center 0.6s cubic-bezier(1, 0, 0, 1) both;
-            background-color:darkslateblue
+        .scale-up-center {
+            animation: scale-up-center 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         }
-          /* @keyframes scale-up-center {
-            0% { 
-            transform: skew(15deg, 15deg)
+
+        .colorfulbox {
+            background-color: chartreuse;
+            width: 100px;
+            height: 100px;
         }
-        100% {
-            transform: skew(150deg, 150deg)
-        }} */
-        
+
+        .flip-horizontal-bottom {
+            perspective: 1000px;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .front {
+            background: #2dccb8;
+            z-index: 20;
+        }
+
+        .back {
+            background: #2d9fcc;
+            transform: rotateX(180deg);
+        }
+
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flipper {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+            position: absolute;
+            inset: 0;
+        }
+
+        .flip-horizontal-bottom:hover .flipper {
+            transform: rotateX(-180deg);
+        }
+
+        /*KEYFRAMES SECTION*/
+
         @keyframes scale-up-center {
-            0% { 
-            transform: scale(0.5) translate(-500px);
+            0% {
+                transform: scale(0.5);
+            }
+
+
+            100% {
+                transform: scale(1);
+            }
         }
-        100% {
-            transform: scale(1) 
+
+        @keyframes flip-horizontal-bottom {
+            0% {
+                transform: rotateX(0);
+            }
+
+            100% {
+                transform: rotateX(-180deg);
+            }
         }
-    }
     </style>
 </head>
+
 <body>
-     <div class="box"> '
+    <div class="colorfulbox scale-up-center ">
+        Test Text
+    </div>
+
+    <div class="flip-horizontal-bottom" id="flip">
+        <div class="flipper">
+            <div class="front face">
+                A
+            </div>
+            <div class="back face">
+                B
+            </div>
         </div>
-
-        <div class="box2">
-        </div>
-
-
-    
+    </div>
 </body>
+
 </html>
