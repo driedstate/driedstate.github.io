@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animationen</title>
+    <meta name="lang" content="de" />
+    <style>
+        .box {
+            animation: scale-up-center 0.6s cubic-bezier(1, 0, 0, 1) both;
+            background-color:darkslateblue
+        }
+          /* @keyframes scale-up-center {
+            0% { 
+            transform: skew(15deg, 15deg)
+        }
+        100% {
+            transform: skew(150deg, 150deg)
+        }} */
+        
+        @keyframes scale-up-center {
+            0% { 
+            transform: scale(0.5) translate(-500px);
+        }
+        100% {
+            transform: scale(1) 
+        }
+    }
+    </style>
+</head>
+<body>
+     <div class="box"> '
+        </div>
+
+        <div class="box2">
+        </div>
+
+
+    
+</body>
+</html>
