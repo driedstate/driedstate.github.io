@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <style>
-    .anfangstext {
-        font-size: 200px;
-        color: whitesmoke;
-height: 300px;
-width: 800px;
-    }
+    <style>
+        .anfangstext {
+            font-size: 200px;
+            color: whitesmoke;
+            height: 300px;
+            width: 800px;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine erste Website online</title>
+    <title>el gato amigo quizzo</title>
 </head>
+
 <body>
-        <div class="meow">hallo, hier bekommen sie mein unglaubliches Katzenquiz</div>
-              <style>
-           
-    .Anfangenbutton {
-
-        position: relative;
-        height: 110px;
-        width: 110px;
-        left: 1500px;
-        color: cornflowerblue;
-        
-    }
-         .meow {
-                    opacity: 20%;
-                     animation: scale-up-center 0.6s cubic-bezier(1, 0, 0, 1) both;
-            background-color:darkslateblue }
-
-               @keyframes scale-up-center {
-            0% { 
-            transform: skew(0deg, 0deg)
+    <div class="meow">hallo, hier bekommen sie mein unglaubliches Katzenquiz</div>
+    <style>
+        .anfangstext {
+            text-shadow: 
+      0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff,
+            0 0 90px #0ff,
+            0 0 100px #0ff,
+            0 0 150px #0ff;
+        animation: glowPulse 2s ease-in-out infinite alternate;
         }
-        100% {
-            transform: skew(90deg, 90deg)
-        }}  
+        .welcomecat {
+            position: relative;
+            right: -1400px;
+            bottom: 400px;
+        }
+        .Anfangenbutton {
+            font-style: italic;
+            position: relative;
+            height: 210px;
+            width: 210px;
+            left: -100px;
+            font-size: x-large;
+            color: black;
+      background: linear-gradient(90deg,rgba(219, 219, 219, 1) 0%, rgba(0, 107, 201, 0.8) 100%);
 
-        </style>
+
+        }
+
+        .meow {
+            opacity: 20%;
+            animation: scale-up-center 0.6s cubic-bezier(1, 0, 0, 1) both;
+            background-color: darkslateblue
+        }
+
+        @keyframes scale-up-center {
+            0% {
+                transform: skew(0deg, 0deg)
+            }
+
+            100% {
+                transform: skew(90deg, 90deg)
+            }
+        }
+    </style>
 
 
 
     <link rel="stylesheet" href="style.css" />
     <h1 class="anfangstext">Welcome to the ULTIMATE CAT QUIZ</h1>
+    <img class="welcomecat" src="catooo.jpg">
     <a href="https://driedstate.github.io/begin"><button class="Anfangenbutton">Anfangen</button></a>
 
 
 </body>
+
 </html>

@@ -1,14 +1,14 @@
 
 
-- make the thing readable
+[- make the thing readable]
 
-- make text not ugly
+[- make text not ugly]
 
-- make verloren link work
+[- make verloren link work ]
 
 -add redirection to zomboremake
 
--make buttons not ugly
+[-make buttons not ugly]
 
 - add animations
 
