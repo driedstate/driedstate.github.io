@@ -19,5 +19,6 @@
 - add secrets (secret buttons, secret links)
 
 
+okay yay im done with the website. im still going to keep this here though
 
 
